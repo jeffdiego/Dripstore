@@ -1,4 +1,4 @@
-import PreHeader from "../Components/PreHeader"
+import PreHeader from "../Components/PreHeader/PreHeader"
 
 
 function Homepage() {
