@@ -1,11 +1,11 @@
-import Header from "../Components/Header"
+import PreHeader from "../Components/PreHeader"
 
 
 function Homepage() {
   
   return (
     <>
-      <Header/>
+      <PreHeader/>
       
     </>
   )
