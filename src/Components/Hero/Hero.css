@@ -122,3 +122,17 @@
 .swiper-navigation-icon {
     font-size: 5px !important;
 }
+
+
+.hero .swiper-button-prev{
+    padding-right: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hero .swiper-button-next{
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}

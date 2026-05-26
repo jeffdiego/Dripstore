@@ -7,6 +7,7 @@ function Homepage() {
   return (
     <>
       <PreHeader/>
+      
       <Hero/>
       
     </>
