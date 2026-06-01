@@ -6,7 +6,7 @@ function Footer() {
     <>
       <section>
         <div>
-            <img src="logo" alt="Logo" />
+            <img src={Logo} alt="logo" />
             <p>Tecnolgia que conecta você ao <br>
             </br>que hpa de melhor no mundo</p>
         </div>
@@ -17,6 +17,31 @@ function Footer() {
             <p>Trabalhe Conosco</p>
             <p>Politica de Privacidade</p>
             <p>Termos de Uso</p>
+        </div>
+
+        <div>
+            <h2>Ajuda</h2>
+            <p>Central de ajuda</p>
+            <p>Fromas de Pagamentos</p>
+            <p>Prazo de entregas</p>
+            <p>Trocas e devoluções</p>
+        </div>
+
+        <div>
+            <h2>Minha Conta</h2>
+            <p>Meus pedidos</p>
+            <p>Meus dadoss</p>
+            <p>Lista de desejo</p>
+            <p>Ebdereços</p>
+        </div>
+
+        <div>
+            <h2>Forma de pagamento</h2>
+            <img src={Logo2} alt="logo" />
+            <img src={Logo3} alt="logo" />
+            <img src={Logo4} alt="logo" />
+            <img src={Logo5} alt="logo" />
+            <img src={Logo6} alt="logo" />
         </div>
         
         
