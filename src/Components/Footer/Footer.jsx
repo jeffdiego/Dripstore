@@ -1,5 +1,11 @@
 import Logo from "../../assets/logo.png"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faFacebookF,
+  faYoutube,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 function Footer() {
     return (
         <>
@@ -15,10 +21,10 @@ function Footer() {
                 </div>
 
                 <div className="social-icons">
-                    <i className="fa-brands fa-instagram"></i>
-                    <i className="fa-brands fa-facebook-f"></i>
-                    <i className="fa-brands fa-youtube"></i>
-                    <i className="fa-brands fa-tiktok"></i>
+                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faFacebookF} />
+                    <FontAwesomeIcon icon={faYoutube} />
+                    <FontAwesomeIcon icon={faTiktok} />
                 </div>
 
                 <div>
@@ -53,9 +59,6 @@ function Footer() {
                     <img src={Logo5} alt="logo" />
                     <img src={Logo6} alt="logo" />
                 </div>
-
-
-
 
             </section>
         </>
