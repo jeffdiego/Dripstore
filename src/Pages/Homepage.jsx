@@ -1,5 +1,6 @@
 import Hero from "../Components/Hero/Hero"
 import PreHeader from "../Components/PreHeader/PreHeader"
+import Footer from "../Components/Footer/Footer"
 
 
 function Homepage() {
@@ -9,7 +10,7 @@ function Homepage() {
       <PreHeader/>
       
       <Hero/>
-      
+      <Footer/>
     </>
   )
 }
