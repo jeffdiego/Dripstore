@@ -1,3 +1,4 @@
+import FaleConosco from "../Components/FaleConosco/FaleConosco"
 import Hero from "../Components/Hero/Hero"
 import PreHeader from "../Components/PreHeader/PreHeader"
 
@@ -9,7 +10,7 @@ function Homepage() {
       <PreHeader/>
       
       <Hero/>
-      
+      <FaleConosco/>
     </>
   )
 }
