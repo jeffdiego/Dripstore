@@ -1,20 +1,9 @@
-import {
-    faTruck,
-    faCreditCard,
-    faTag,
-    faHeadset,
-    faBox,
-    faShieldHalved,
-    faRotate
-} from "@fortawesome/free-solid-svg-icons";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ProdCategorias.css"
 import TV from "../../assets/tv.png"
 import celular from "../../assets/celular.png"
 import computador from "../../assets/computer.png"
 import controle from "../../assets/ctrl.png"
-import fone from "../../assets/fone.png"
+import fone from "../../assets/headfone.png"
 import lampada from "../../assets/lampada.png"
 import mouse from "../../assets/rato.png"
 import watch from "../../assets/watch.png"
