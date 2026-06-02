@@ -1,4 +1,10 @@
 import Logo from "../../assets/logo.png"
+import Amex from "../../assets/amex.png"
+import Boleto from "../../assets/boleto.png"
+import Elo from "../../assets/elo.png"
+import Master from "../../assets/master.png"
+import Pix from "../../assets/pix.png"
+import Visa from "../../assets/visa.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -11,7 +17,7 @@ function Footer() {
         <>
             <section className="footer-social">
                 <div>
-                    <img src="/logo.png" alt="Logo" />
+                    <img src={Logo} alt="" />
 
                     <p>
                         Tecnologia que conecta você ao
@@ -53,11 +59,12 @@ function Footer() {
 
                 <div>
                     <h2>Forma de pagamento</h2>
-                    <img src={Logo2} alt="logo" />
-                    <img src={Logo3} alt="logo" />
-                    <img src={Logo4} alt="logo" />
-                    <img src={Logo5} alt="logo" />
-                    <img src={Logo6} alt="logo" />
+                    <img src={Amex} alt="amex" />
+                    <img src={Boleto} alt="Boleto" />
+                    <img src={Elo} alt="Elo" />
+                    <img src={Master} alt="Master" />
+                    <img src={Pix} alt="pix" />
+                    <img src={Visa} alt="Visa" />
                 </div>
 
             </section>
