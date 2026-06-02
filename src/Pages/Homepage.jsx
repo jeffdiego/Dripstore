@@ -2,6 +2,7 @@ import Header from "../Components/Header/Header"
 import Hero from "../Components/Hero/Hero"
 import PreHeader from "../Components/PreHeader/PreHeader"
 import BenefitsBar from "../Components/BenefitsBar/BenefitsBar"
+import MaisVendidos from "../Components/MaisVendidos/MaisVendidos"
 
 function Homepage() {
   
@@ -11,8 +12,7 @@ function Homepage() {
       <Header/>
       <Hero/>
       <BenefitsBar/>
-      
-      
+      <MaisVendidos/>
     </>
   )
 }
