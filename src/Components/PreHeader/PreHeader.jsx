@@ -5,7 +5,8 @@ import {
   faHeadset,
   faBox,
   faShieldHalved,
-  faRotate
+  faRotate,
+  
 } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

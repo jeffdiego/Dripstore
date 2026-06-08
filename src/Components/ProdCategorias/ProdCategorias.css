@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#categorias {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 2vh;
+
+}
+
+#vertodas {
+    display: flex;
+    justify-content: space-between;
+}
+
+#vertodas button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    color: blue;
+    font-weight: 550;
+}
+
+#vertodas h4 {
+    font-size: 13px;
+
+}
+
+#prods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+
+}
+
+.prod {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 120px;
+    flex-direction: column;
+    background-color: #F4F5F6;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.prod img {
+    max-width: 90px;
+    max-height: 70px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
