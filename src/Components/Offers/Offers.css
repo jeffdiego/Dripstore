@@ -1,0 +1,89 @@
+.offers {
+  display: flex;
+  gap: 16px;
+  padding: 0 16px;
+  margin: 24px 0;
+}
+
+.offers__banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  border-radius: 12px;
+  padding: 32px;
+  overflow: hidden;
+}
+
+/* Cores dos banners */
+.offers__banner--dark {
+  background-color: #1a1a2e;
+}
+
+.offers__banner--light {
+  background-color: #e8f4fd;
+}
+
+/* Conteúdo de texto */
+.offers__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Títulos */
+.offers__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.offers__banner--dark .offers__title {
+  color: #ffffff;
+}
+
+.offers__banner--light .offers__title {
+  color: #1a1a2e;
+}
+
+/* Subtítulos */
+.offers__subtitle {
+  font-size: 0.85rem;
+}
+
+.offers__banner--dark .offers__subtitle {
+  color: #a0a0b0;
+}
+
+.offers__banner--light .offers__subtitle {
+  color: #4a5568;
+}
+
+/* Botões */
+.offers__btn {
+  margin-top: 8px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.offers__btn--dark {
+  background-color: #ffffff;
+  color: #1a1a2e;
+}
+
+.offers__btn--light {
+  background-color: #1a73e8;
+  color: #ffffff;
+}
+
+/* Imagens */
+.offers__image {
+  width: 220px;
+  height: 160px;
+  object-fit: contain;
+}
