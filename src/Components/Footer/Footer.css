@@ -1,0 +1,114 @@
+.footer {
+  background: #f7f7f7;
+  padding: 30px 40px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-container {
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 5vh;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+.footer-brand {
+  width: 100%;
+  max-width: 220px;
+}
+
+.footer-logo {
+  width: 118px;
+  display: block;
+}
+
+.footer-brand p {
+  margin: 25px 0 10px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.4;
+  max-width: 200px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+
+  gap: 19px;
+  margin-top: 6px;
+}
+
+.social-icons a {
+  width: 32px;
+  height: 32px;
+  color: #111;
+  font-size: 22px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-column li:hover {
+  color: #111;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 230px;
+}
+
+.payment-methods img {
+  width: 50px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.security-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.security-methods img {
+  width: 120px;
+  object-fit: contain;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #777;
+}
+.icon-size{
+  font-size: 18px;
+}
