@@ -1,163 +1,236 @@
-/* Container para centralizar o conteúdo */
+/* ==========================
+   RESET
+========================== */
+* {
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-/* Elementos globais de ícones */
-.material-symbols-outlined {
-  font-size: 28px;
-  color: #333;
+/* ==========================
+   HEADER
+========================== */
+.main-header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
 }
 
-/* ==================== 
-   LINHA SUPERIOR (Header Top)
-   ==================== */
 .header-top {
-  background-color: #ffffff;
-  padding: 15px 0;
-  border-bottom: 1px solid #f0f0f0;
+  height: 72px;
 }
 
 .top-container {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* ==========================
+   LOGO
+========================== */
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  min-width: 150px;
+}
+
+.logo-blue {
+  color: #2563eb;
+}
+
+.logo-black {
+  color: #111827;
+}
+
+/* ==========================
+   CATEGORIAS
+========================== */
+.search-category {
+  width: 180px;
+  height: 42px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+
+  padding: 0 14px;
+  cursor: pointer;
+
+  background: #fff;
 }
 
-/* Logo */
-.logo {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  text-decoration: none;
+.search-category span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
 }
-.logo-blue { color: #1a56db; }
-.logo-black { color: #111827; }
 
-/* Barra de Busca */
-.search-category {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  max-width: 650px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #f9fafb;
+.arrow-icon {
+  font-size: 11px;
+  color: #6b7280;
 }
+
+/* ==========================
+   SEARCH
+========================== */
 .search-box {
+  flex: 1;
+  max-width: 760px;
+  height: 42px;
+
   display: flex;
   align-items: center;
-  flex: 1;
-  max-width: 450px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #f9fafb;
-}
 
-.search-category .arrow-icon {
-  font-size: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  overflow: hidden;
+  background: #fff;
 }
 
 .search-box input {
   flex: 1;
+  height: 100%;
+
   border: none;
-  padding: 12px 15px;
-  background-color: transparent;
-  font-size: 14px;
   outline: none;
+
+  padding: 0 18px;
+
+  font-size: 13px;
+  color: #111827;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
 }
 
 .search-btn {
-  background-color: #1a56db;
+  width: 48px;
+  height: 42px;
+
   border: none;
-  padding: 0 20px;
-  height: 44px;
+  background: #2563eb;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   cursor: pointer;
-  transition: background 0.2s;
 }
 
-.search-btn:hover {
-  background-color: #1a4fd0;
+.search-btn svg {
+  font-size: 14px;
+  color: #fff;
 }
 
-.search-btn .material-symbols-outlined {
-  color: #ffffff;
-  font-size: 22px;
-}
-
-/* Ações do Usuário */
+/* ==========================
+   ACTIONS
+========================== */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 28px;
 }
 
 .action-item {
   display: flex;
   align-items: center;
   gap: 8px;
+
   text-decoration: none;
+  color: inherit;
+
+  position: relative;
+}
+
+.header-icon {
+  font-size: 18px;
+  color: #111827;
 }
 
 .action-text {
   display: flex;
   flex-direction: column;
-  font-size: 13px;
-  line-height: 1.3;
-  color: #1f2937;
+  line-height: 1.15;
 }
 
-.action-text .text-light {
-  color: #6b7280;
-  font-weight: 400;
+.text-light {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 500;
 }
 
-/* Carrinho com Contador (Badge) */
-.cart-item {
+.action-text strong {
+  font-size: 12px;
+  color: #111827;
+  font-weight: 700;
+}
+
+/* ==========================
+   CART
+========================== */
+.cart-icon-wrapper {
   position: relative;
 }
 
 .cart-badge {
   position: absolute;
-  top: -6px;
-  right: 18px;
-  background-color: #1a56db;
-  color: white;
-  font-size: 11px;
-  font-weight: bold;
+  top: -7px;
+  right: -8px;
+
+  width: 16px;
+  height: 16px;
+
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  background: #2563eb;
+  color: white;
+
+  font-size: 9px;
+  font-weight: 700;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* ==================== 
-   LINHA INFERIOR (Menu de Navegação)
-   ==================== */
+/* ==========================
+   NAVBAR
+========================== */
 .header-nav {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #ececec;
+  height: 48px;
+}
+
+.nav-container {
+  height: 100%;
 }
 
 .nav-list {
+  height: 100%;
+
   display: flex;
   align-items: center;
-  gap: 20px;
-  height: 50px;
+  gap: 24px;
+
   list-style: none;
   margin: 0;
   padding: 0;
+
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -166,36 +239,63 @@
   display: none;
 }
 
-.nav-list li a {
-  font-size: 14px;
-  color: #4b5563;
+.nav-list a {
+  text-decoration: none;
+
+  font-size: 13px;
   font-weight: 500;
-  transition: color 0.2s;
+
+  color: #4b5563;
+
+  transition: .2s;
+}
+
+.nav-list a:hover {
+  color: #2563eb;
+}
+
+.all-categories a {
   display: flex;
   align-items: center;
-  text-decoration: none;
-}
-
-.nav-list li a:hover {
-  color: #1a56db;
-}
-
-/* Destaque para "Todas as categorias" */
-.nav-list .all-categories a {
-  color: #111827;
   gap: 8px;
+
+  font-weight: 700;
+  color: #111827;
 }
 
-.nav-list .all-categories .material-symbols-outlined {
-  font-size: 20px;
+.all-categories svg {
+  font-size: 14px;
 }
 
-/* Link de Ofertas em Vermelho */
-.nav-list .highlight-link {
-  color: #ef4444;
-  font-weight: 600;
+.highlight-link {
+  color: #ef4444 !important;
+  font-weight: 700;
 }
 
-.nav-list .highlight-link:hover {
-  color: #dc2626;
+/* ==========================
+   RESPONSIVO
+========================== */
+@media (max-width: 1024px) {
+  .top-container {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .action-text {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 18px;
+  }
+
+  .search-category {
+    display: none;
+  }
 }

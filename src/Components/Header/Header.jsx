@@ -1,69 +1,131 @@
 import React from 'react';
-import './Header.css'; 
+import './Header.css';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import {
+  faChevronDown,
+  faMagnifyingGlass,
+  faCartShopping,
+  faBars
+} from '@fortawesome/free-solid-svg-icons';
+
+import {
+  faUser,
+  faHeart
+} from '@fortawesome/free-regular-svg-icons';
 
 export default function Header() {
   return (
     <header className="main-header">
-      {/* Linha Superior: Logo, Busca e Ações */}
+
+      {/* Linha Superior */}
       <div className="header-top">
         <div className="container top-container">
-          
+
           {/* Logo */}
           <a href="#" className="logo">
-            <span className="logo-blue">Tech</span><span className="logo-black">Store</span>
+            <span className="logo-blue">Tech</span>
+            <span className="logo-black">Store</span>
           </a>
 
-          {/* Barra de Busca */}
-           <div className="search-category">
-              <span>Todas as categorias</span>
-              <span className="material-symbols-outlined arrow-icon">&#9662;</span>
-            </div>
+          {/* Categoria */}
+          <div className="search-category">
+            <span>Todas as categorias</span>
+
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className="arrow-icon"
+            />
+          </div>
+
+          {/* Busca */}
           <div className="search-box">
-            <input type="text" placeholder="&#128269; Buscar produtos..." />
+            <input
+              type="text"
+              placeholder="Buscar produtos..."
+            />
+
             <button type="submit" className="search-btn">
-              <span className="material-symbols-outlined">&#128269;</span>
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+              />
             </button>
           </div>
 
-          {/* Ações do Usuário (Conta, Favoritos, Carrinho) */}
+          {/* Ações do Usuário */}
           <div className="header-actions">
+
+            {/* Conta */}
             <a href="#" className="action-item">
-              <span className="material-symbols-outlined">&#128100;</span>
+              <FontAwesomeIcon
+                icon={faUser}
+                className="header-icon"
+              />
+
               <div className="action-text">
-                <span className="text-light">Entrar ou</span>
+                <span className="text-light">
+                  Entrar ou
+                </span>
+
                 <strong>Cadastrar</strong>
               </div>
             </a>
-            
+
+            {/* Favoritos */}
             <a href="#" className="action-item">
-              <span className="material-symbols-outlined">&#9825;</span>
+              <FontAwesomeIcon
+                icon={faHeart}
+                className="header-icon"
+              />
+
               <div className="action-text">
                 <strong>Favoritos</strong>
               </div>
             </a>
 
+            {/* Carrinho */}
             <a href="#" className="action-item cart-item">
-              <span className="material-symbols-outlined">&#128722;</span>
+              <div className="cart-icon-wrapper">
+
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  className="header-icon"
+                />
+
+                <span className="cart-badge">
+                  0
+                </span>
+
+              </div>
+
               <div className="action-text">
-                <strong>Guarde no Carrinho</strong>
-                <span className="cart-badge">0</span>
+                <strong>
+                  Guarde no Carrinho
+                </strong>
               </div>
             </a>
-          </div>
 
+          </div>
         </div>
       </div>
 
-      {/* Linha Inferior: Menu de Navegação */}
+      {/* Linha Inferior */}
       <nav className="header-nav">
         <div className="container nav-container">
+
           <ul className="nav-list">
+
             <li className="all-categories">
               <a href="#">
-                <span className="material-symbols-outlined">&#9776;</span>
-                <strong>Todas as categorias</strong>
+                <FontAwesomeIcon icon={faBars} />
+
+                <strong>
+                  Todas as categorias
+                </strong>
               </a>
             </li>
+
             <li><a href="#">Celulares</a></li>
             <li><a href="#">Notebooks</a></li>
             <li><a href="#">Áudio</a></li>
@@ -72,7 +134,16 @@ export default function Header() {
             <li><a href="#">Periféricos</a></li>
             <li><a href="#">TVs & Vídeo</a></li>
             <li><a href="#">Casa Inteligente</a></li>
-            <li><a href="#" className="highlight-link">Ofertas</a></li>
+
+            <li>
+              <a
+                href="#"
+                className="highlight-link"
+              >
+                Ofertas
+              </a>
+            </li>
+
           </ul>
         </div>
       </nav>
