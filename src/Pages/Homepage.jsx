@@ -17,11 +17,11 @@ function Homepage() {
       <Header/>
       <BenefitsBar/>
       <Hero/>
-      <Footer/>
       <MaisVendidos/>
       <ProdCategorias/>
       <Offers/>
       <FaleConosco/>
+      <Footer/>
     </>
   )
 }
