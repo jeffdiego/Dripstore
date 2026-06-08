@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 21px;
+    margin: 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    gap: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.benefitsItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 10vw;
+}
+
+.benefits svg {
+    font-size: 20px;
+    color: #333;
+}
+
+.benefitsItem strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.benefitsItem p {
+    font-size: 8px;
+    color: #666;
+    margin: 2px 0 0 0;
+}
