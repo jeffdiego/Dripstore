@@ -1,8 +1,9 @@
+import ProductDescription from "../Components/ProductDescription/ProductDescription"
 function ProductDetails() {
-  
+
   return (
     <>
-        <h1>Product Details</h1>
+      <ProductDescription></ProductDescription>
     </>
   )
 }
