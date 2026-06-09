@@ -35,9 +35,6 @@ function ProductDetalhes() {
 
     return (
         <>
-            <PreHeader />
-            <Header />
-
             <section>
                 <h4 id="filtros-produto">
                     Home &gt; Áudio &gt; Fones de Ouvido Bluetooth
