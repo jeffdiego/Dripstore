@@ -1,5 +1,5 @@
 
-export const Cards = () => {
+export const Cards = (props) => {
     return (
         <>
             <div className="card-content">
