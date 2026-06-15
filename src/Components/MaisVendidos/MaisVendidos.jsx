@@ -5,7 +5,7 @@ import Smartwatch from "../../assets/Smartwatch.png";
 import CaixaSom from "../../assets/Caixa_Som_JBL.png";
 import TVLG from "../../assets/TV_LG_55.png";
 import "./MaisVendidos.css";
-
+import { Cards } from "../Cards/Cards";
 function MaisVendidos() {
     return (
 
@@ -15,6 +15,9 @@ function MaisVendidos() {
                 <a href="#">Ver todos</a>
             </div>
             <div className="card-container">
+                <Card
+                    
+                />
                 <div className="card-content">
                     <div className="card-image">
                         <img src={Galaxy} alt="Smartphone Galaxy" height={100} />
